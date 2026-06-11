@@ -5,6 +5,23 @@
     <title>Hakkımda</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<style>
+
+    details {
+    margin-left: 10px;
+    margin-top: 5px;
+    }
+
+    summary {
+    cursor: pointer;
+    }
+
+
+
+</style>
+
+
 <body>
 
 <nav>
@@ -14,11 +31,30 @@
     <a href="contact.html">İletişim</a>
 </nav>
 
-<h1>Hakkımda</h1>
+<details>
+    <summary>Hakkında</summary>
 
-<p>
-Yazılım, sistem tasarımı ve teknolojiyle ilgileniyorum.
-</p>
+    <details>
+        <summary>Ben</summary>
+        <p>Merhaba, ben Tuğra. İlaydayı çok seviyorum <3</p>
+    </details>
+
+    <details>
+        <summary>Çiçekler</summary>
+        <img src="assets/flowers.webp" alt="cicekler" width="100">
+        <p>Gülleri ve lavantaları seviyorum.</p>
+    </details>
+
+    <details>
+        <summary>Bilgisayar</summary>
+
+        <details>
+            <summary>Linux</summary>
+            <p>Hyprland kullanıyorum.</p>
+        </details>
+
+    </details>
+</details>
 
 </body>
 </html>
