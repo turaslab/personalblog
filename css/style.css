@@ -1,0 +1,29 @@
+body {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+
+    font-family: sans-serif;
+
+    background: #111;
+    color: #eee;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 3rem;
+}
