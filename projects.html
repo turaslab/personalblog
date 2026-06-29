@@ -3,8 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>/projelerim</title>
-
+    <title>Oynadıklarım — Kütüphane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/library.css">
 </head>
-<body>
+<body class="library-page">
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="projects.html" class="active">Oynadıklarım</a>
+</nav>
+
+<!-- ── HEADER ── -->
+<header class="lib-header">
+    <div class="lib-header__inner">
+        <div class="lib-header__titles">
+            <span class="lib-header__eyebrow">Oynadıklarım :thumbsup:👍</span>
+        </div>
+        <div class="lib-header__stats" id="headerStats">
+            <!-- JS ile doldurulur -->
+        </div>
+    </div>
+</header>
+
+<!-- ── TOOLBAR ── -->
+<div class="toolbar">
+    <div class="toolbar__left">
+        <button class="filter-btn active" data-filter="all">Tümü</button>
+        <button class="filter-btn" data-filter="favorite">⭐ Favoriler</button>
+        <button class="filter-btn" data-filter="completed">✔ Tamamlanan</button>
+        <button class="filter-btn" data-filter="playing">▶ Oynuyor</button>
+    </div>
+    <div class="toolbar__right">
+        <div class="sort-wrap">
+            <label for="sortSelect">Sırala:</label>
+            <select id="sortSelect">
+                <option value="recent">Son Oynanan</option>
+                <option value="rating">Puana Göre</option>
+                <option value="hours">Saate Göre</option>
+                <option value="name">İsme Göre</option>
+                <option value="completion">Tamamlanmaya Göre</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<!-- ── GRID ── -->
+<main class="lib-grid" id="gameGrid">
+    <!-- oyun kartları JS ile oluşturulur -->
+</main>
+
+<!-- ── HOVER DETAIL CARD (overlay) ── -->
+<div class="detail-overlay" id="detailOverlay">
+    <div class="detail-card" id="detailCard">
+        <button class="detail-close" id="detailClose">✕</button>
+        <div class="detail-card__content" id="detailContent"></div>
+    </div>
+</div>
+
+<script src="js/games.js"></script>
+<script src="js/library.js"></script>
+</body>
+</html>
